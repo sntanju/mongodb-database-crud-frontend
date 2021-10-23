@@ -13,20 +13,22 @@ function App() {
         <div>
           <Header></Header>
           <Switch>
+            
             <Route exact path="/">
               <Home></Home>
             </Route>
+
             <Route exact path="/users">
               <Users></Users>
             </Route>
+            
             <Route path="/users/add">
               <AddUser></AddUser>
             </Route>
-            <Route path="/users/add">
-              <AddUser></AddUser>
-            </Route>
+
             <Route path="/users/update/:id">
               <UpdateUser></UpdateUser>
+
             </Route>
 
           </Switch>
